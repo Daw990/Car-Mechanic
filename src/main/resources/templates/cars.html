@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{fragments/layout}">
+<head>
+    <title>Car list</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF8" />
+
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.4.1/css/bootstrap.min.css}" />
+
+    <script th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/4.4.1/js/bootstrap.min.js}"></script>
+</head>
+<body style="background-color: white">
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Nazwa auta</td>
+            <td>Rocznik</td>
+            <td>Naprawa</td>
+        </tr>
+        </thead>
+    <tbody>
+    <tr th:each="car : ${cars}">
+        <td th:text="${car.name}"></td>
+        <td th:text="${car.year}"></td>
+        <td th:text="${car.repairs}"></td>
+        <td><a th:href="${'/car/delete/'+car.id}">Usuń</a></td>
+        <td><a th:href="${'/car/editCar?id='+car.id}">Edytuj</a></td>
+    </tr>
+
+    </tbody>
+    </table>
+    <div class="row">
+        <a href="/car/newCar">Dodaj Samochód</a>
+    </div>
+</div>
+</body>
+</html>
