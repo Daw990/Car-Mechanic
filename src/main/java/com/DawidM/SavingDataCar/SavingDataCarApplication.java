@@ -9,6 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class SavingDataCarApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(SavingDataCarApplication.class, args);
 	}
 

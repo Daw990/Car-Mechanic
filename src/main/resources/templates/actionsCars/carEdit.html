@@ -12,7 +12,12 @@
 <body style="background-color: grey">
 <div class="container">
 
-    <form class="form-horizontal" th:object="${car}" th:action="@{/saveCar}" th:method="post">
+    <form class="form-horizontal" th:object="${car}" th:action="@{/cars/editcars}" th:method="post">
+
+        <input type="hidden" th:field="*{id}"/>
+
+
+
         <div class="form-group">
             <label class="control-label"><b>Rodzaj Samochodu:</b></label>
             <input type="text" class="form-control" th:field="*{name}"/>
@@ -27,7 +32,7 @@
         </div>
         <div class="row col-xl-12">
             <div class="tile col-xl-6">
-                <button type="submit" class="btn btn-primary">Dodaj</button>
+                <button type="submit" class="btn btn-primary">Zamień</button>
                 <a href="/cars"><button type="button" class="btn btn-primary">Powrót</button></a>
             </div>
         </div>

@@ -21,38 +21,38 @@ public class CarController {
     @Autowired
     CarService service;
 
-    @RequestMapping("/cars")
+    @RequestMapping("/cars") //patch to list of cars
     public String getCars(Model model){
         List<Car> allCars = service.getAllCars();
         model.addAttribute("cars", allCars);
         return "cars";
     }
 
-    @RequestMapping("/car/editCar")
+    @RequestMapping("/cars/editCar") //patch u see in browse
     public String getCar(@PathParam("id") Integer id, Model model) {
         Car car = service.getCar(id);
         model.addAttribute("car", car);
-        return "carEdit";
+        return "actionsCars/carEdit"; // name of file html
     }
-    @RequestMapping(value="/editcars", method = RequestMethod.POST)
+    @RequestMapping(value="cars/editcars", method = RequestMethod.POST) //click button in site /car/editcar
     public String editCar(Car car){
         service.updateCar(car);
-        return "redirect:/cars";
+        return "redirect:/cars"; //back to list of cars
     }
 
-    @RequestMapping("/car/newCar")
+    @RequestMapping("/cars/newCar") //patch u see in browse
     public String createCar(Model model) {
         model.addAttribute("car", new Car());
-        return "carform";
+        return "actionsCars/carform";  // name of file html
     }
 
-    @RequestMapping(value="/saveCar", method = RequestMethod.POST)
+    @RequestMapping(value="/cars/saveCar", method = RequestMethod.POST) //action for "dodaj" in carform.html
     public String saveCar(Car car){
         service.saveCar(car);
         return "redirect:/cars";
     }
 
-    @RequestMapping(value="/car/delete/{id}")
+    @RequestMapping(value="/cars/delete/{id}") //action for "usun" button in carform.html
     public String deleteCar(@PathVariable("id") Integer id){
         service.deleteCar(id);
         return "redirect:/cars";
