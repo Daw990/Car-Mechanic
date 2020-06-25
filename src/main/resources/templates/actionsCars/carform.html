@@ -1,37 +1,40 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Add Car</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF8" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.4.1/css/bootstrap.min.css}" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <script th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
-    <script th:src="@{/webjars/bootstrap/4.4.1/js/bootstrap.min.js}"></script>
+    <title>Type of Service</title>
 </head>
-<body style="background-color: grey">
-<div class="container">
 
-    <form class="form-horizontal" th:object="${car}" th:action="@{/cars/saveCar}" th:method="post">
-        <div class="form-group">
-            <label class="control-label"><b>Rodzaj Samochodu:</b></label>
-            <input type="text" class="form-control" th:field="*{name}"/>
-        </div>
-        <div class="form-group">
-            <label class="control-label"><b>Rocznik:</b></label>
-            <input type="text" class="form-control" th:field="*{year}"/>
-        </div>
-        <div class="form-group">
-            <label class="control-label"><b>Naprawa:</b></label>
-            <input type="text" class="form-control" th:field="*{repairs}"/>
-        </div>
-        <div class="row col-xl-12">
-            <div class="tile col-xl-6">
-                <button type="submit" class="btn btn-primary">Dodaj</button>
-                <a href="/cars"><button type="button" class="btn btn-primary">Powrót</button></a>
-            </div>
-        </div>
+<body>
+
+<div class="container">
+    <div th:insert="menu.html :: nav"></div>
+    <h3><b>Dodaj usługę: </b></h3>
+    <hr>
+    <form action="#" th:action="@{/cars/save}"
+          th:object="${car}" th:method="POST">
+
+        <input type="text" required="required" th:field="*{name}"
+               class="form-control mb-4 col-4" placeholder="Model i marka">
+
+        <input type="number" required="required" step="0.01" min="0" value="" th:field="*{year}"
+               class="form-control mb-4 col-4" placeholder="Rok">
+
+        <input type="text" required="required" value="" th:field="*{repairs}"
+               class="form-control mb-4 col-4" placeholder="Usterka">
+
+        <button type="submit" class="btn btn-info col-2">Dodaj</button>
     </form>
+    <hr>
+    <a th:href="@{/cars/list}">Powrót do listy usług</a>
+
 </div>
+
 </body>
 </html>

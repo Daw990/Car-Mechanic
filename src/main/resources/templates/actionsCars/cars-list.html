@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Car List</title>
+</head>
+
+<body>
+<div class="container">
+
+    <div th:insert="menu.html :: nav"></div>
+
+    <h3><b>Lista Napraw</b></h3>
+    <hr>
+    <a th:href="@{/cars/newCar}"
+       class="btn btn-primary btn-sm mb-3">
+        Dodaj Samochód
+    </a>
+
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <td>Marka model</td>
+            <td>Rocznik</td>
+            <td>Naprawa</td>
+        </tr>
+        </thead>
+    <tbody>
+    <tr th:each="car : ${cars}">
+        <td th:text="${car.name}"></td>
+        <td th:text="${car.year}"></td>
+        <td th:text="${car.repairs}"></td>
+        <td>
+            <!-- update button -->
+            <a th:href="@{/cars/editCar(carId=${car.id})}"
+               class="btn btn-info btn-sm">
+                Edytuj
+            </a>
+
+            <!-- delete button -->
+            <a th:href="@{/cars/delete(carId=${car.id})}"
+               class="btn btn-danger btn-sm"
+               onclick="if (!(confirm('Jesteś pewny/a że chcesz usunąć?'))) return false">
+                Usuń
+            </a>
+
+        </td>
+    </tr>
+
+    </tbody>
+    </table>
+</div>
+</body>
+</html>
