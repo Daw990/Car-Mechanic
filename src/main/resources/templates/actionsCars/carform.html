@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="jquery.datetimepicker.min.css" rel="stylesheet">
 
     <title>Type of Service</title>
 </head>
@@ -14,9 +15,15 @@
 <body>
 
 <div class="container">
+
     <div th:insert="menu.html :: nav"></div>
     <h3><b>Dodaj usługę: </b></h3>
     <hr>
+    <!---- input date ---->
+    <input type="text" id="date" class="form-controll">
+
+    <!-- end input date -->
+
     <form action="#" th:action="@{/cars/save}"
           th:object="${car}" th:method="POST">
 
@@ -36,5 +43,18 @@
 
 </div>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="jquery.datetimepicker.full.min.js"></script>
+<script>
+    $('#date').datetimepicker({
+        timepicker: false,
+        datepicker: true,
+        format: 'd-m-Y',  //format date
+        value:  '25-06-2020', //default data
+        weeks: true
+    })
+</script>
 </body>
 </html>
