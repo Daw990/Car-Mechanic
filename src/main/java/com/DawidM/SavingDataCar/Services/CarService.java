@@ -8,9 +8,9 @@ public interface CarService {
 
     public List<Car> findAll();
 
-    public Car findById(long id);
+    public Car findById(Long id);
 
     public Car save(Car car);
 
-    public void deleteById(long id);
+    public void deleteById(Long id);
 }
