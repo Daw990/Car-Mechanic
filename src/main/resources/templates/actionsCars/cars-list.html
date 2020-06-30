@@ -16,7 +16,7 @@
 
     <div th:insert="menu.html :: nav"></div>
 
-    <h3><b>Lista Napraw</b></h3>
+    <h3><b>Lista samochodów</b></h3>
     <hr>
     <a th:href="@{/cars/newCar}"
        class="btn btn-primary btn-sm mb-3">
@@ -26,25 +26,25 @@
     <table class="table table-bordered table-hover">
         <thead class="thead-dark">
         <tr>
-            <td>Marka model</td>
+            <td>Marka</td>
+            <td>Model</td>
             <td>Rocznik</td>
-            <td>Naprawa</td>
         </tr>
         </thead>
     <tbody>
     <tr th:each="car : ${cars}">
-        <td th:text="${car.name}"></td>
+        <td th:text="${car.markCar}"></td>
+        <td th:text="${car.modelCar}"></td>
         <td th:text="${car.year}"></td>
-        <td th:text="${car.repairs}"></td>
         <td>
             <!-- update button -->
-            <a th:href="@{/cars/editCar(carId=${car.id})}"
+            <a th:href="@{/cars/editCar(carId=${car.CarId})}"
                class="btn btn-info btn-sm">
                 Edytuj
             </a>
 
             <!-- delete button -->
-            <a th:href="@{/cars/delete(carId=${car.id})}"
+            <a th:href="@{/cars/delete(carId=${car.CarId})}"
                class="btn btn-danger btn-sm"
                onclick="if (!(confirm('Jesteś pewny/a że chcesz usunąć?'))) return false">
                 Usuń
