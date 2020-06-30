@@ -57,7 +57,7 @@ public class CarController {
     }
 
     @GetMapping("/delete")
-    public String delete(@RequestParam("carId") int id){
+    public String delete(@RequestParam("carId") Long id){
 
         carService.deleteById(id);
         return "redirect:/cars/list";
