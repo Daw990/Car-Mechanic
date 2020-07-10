@@ -5,9 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name="Car")
+@Table
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,12 +17,27 @@ public class Car {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @Column
-    private Long carId;
+    private Long idCar;
     @Column
     private String markCar;
     @Column
     private String modelCar;
     @Column
     private Integer year;
+    @Column
+    private String engineType;
+    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.PERSIST, CascadeType.REFRESH} )
+    @JoinColumn(name="id_user")
+    private User user;
+
+    @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.DETACH, CascadeType.PERSIST, CascadeType.REFRESH}  )
+    @JoinColumn
+    private List<Visit> visits;
+
+    public void addVisit(Visit visit){
+        if(visits == null){
+            visits = new ArrayList<>();
+        }
+        visits.add(visit);
+    }
 }

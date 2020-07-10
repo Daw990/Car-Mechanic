@@ -7,11 +7,11 @@ import java.util.List;
 
 public interface RepairService {
 
-    public List<Repair> findAll();
+    List<Repair> findAll();
 
-    public Repair findById(Long id);
+    Repair findById(Long id);
 
-    public Repair save(Repair repair);
+    Repair save(Repair repair);
 
-    public void deleteById(Long id);
+    void deleteById(Long id);
 }

@@ -1,15 +1,20 @@
 package com.DawidM.SavingDataCar.controllers;
 
+import com.DawidM.SavingDataCar.Services.SignUpService;
+import com.DawidM.SavingDataCar.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class WebController {
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String login(Model model, String error, String logout) {
+
+    @GetMapping(value = "/login")
+    public String login() {
         return "login";
     }
+
+
 }

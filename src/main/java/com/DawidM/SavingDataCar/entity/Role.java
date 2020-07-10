@@ -5,24 +5,20 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Employee {
+public class Role {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long idRole;
     @Column
-    private Long employeeId;
-    @Column
-    private String firstName;
-    @Column
-    private String SecondName;
-    @Column
-    private String email;
-    @Column
-    private String PhoneNumber;
+    private String role;
+    @ManyToMany(mappedBy = "roles")
+    private List<User> users;
 }

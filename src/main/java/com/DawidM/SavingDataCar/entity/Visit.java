@@ -17,8 +17,7 @@ public class Visit {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @Column
-    private Long visitId;
+    private Long idVisit;
     @Column
     private String visitStartedDate;
     @Column
@@ -26,27 +25,6 @@ public class Visit {
     @Column
     private String visitTime;
     @Column
-    private Integer position;  // work position
+    private Integer position;  // this firm have 2 repairs positions
 
-    @OneToMany
-    @JoinColumn
-    private List<Customer> customers;
-
-    @OneToMany
-    @JoinColumn
-    private List<Repair> repairs;
-
-    public void add(Customer customer){
-        if(customers == null){
-            customers = new ArrayList<>();
-        }
-        customers.add(customer);
-    }
-
-    public void add(Repair repair){
-        if(repairs == null){
-            repairs = new ArrayList<>();
-        }
-        repairs.add(repair);
-    }
 }
