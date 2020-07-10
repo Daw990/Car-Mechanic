@@ -19,13 +19,15 @@
     <div th:insert="menu.html :: nav"></div>
     <h3><b>Dodaj samochód: </b></h3>
     <hr>
-    <!---- input date ---->
-    <input type="text" id="date" class="form-controll">
+    <!---- input date
+    <input type="text" id="date" class="form-controll">---->
 
     <!-- end input date -->
 
     <form action="#" th:action="@{/cars/save}"
           th:object="${car}" th:method="POST">
+
+        <input type="hidden" th:field="*{idCar}"/>
 
         <input type="text" required="required" th:field="*{markCar}"
                class="form-control mb-4 col-4" placeholder="Podaj markę">
@@ -36,10 +38,13 @@
         <input type="number" required="required" step="0.01" min="0" value="" th:field="*{year}"
                class="form-control mb-4 col-4" placeholder="Podaj rok">
 
+        <input type="text" required="required" th:field="*{engineType}"
+               class="form-control mb-4 col-4" placeholder="Podaj rodzaj silnika np.: 1.9 tdi">
+
         <button type="submit" class="btn btn-info col-2">Dodaj</button>
     </form>
     <hr>
-    <a th:href="@{/cars/list}">Powrót do listy usług</a>
+    <a th:href="@{/cars/list}">Powrót do listy samochodów</a>
 
 </div>
 

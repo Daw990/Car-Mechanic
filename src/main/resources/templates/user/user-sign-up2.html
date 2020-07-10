@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
     <title>Type of Service</title>
 </head>
 
@@ -15,11 +16,28 @@
 <div class="container">
 
     <div th:insert="menu.html :: nav"></div>
-    <br>
-    <h3><b>Strona Główna</b></h3>
+    <h3><b>Rejestracja </b></h3>
     <hr>
 
+    <form class="login-form" action="/sign_up" th:method="POST">
+        <input type="text" required="required" name="firstName"
+               class="form-control mb-4 col-4" placeholder="Imię">
 
+        <input type="text" required="required" name="secondName"
+               class="form-control mb-4 col-4" placeholder="Nazwisko">
+
+        <input type="email" required="required" name="username"
+               class="login-element form-control mb-4 col-4" placeholder="email">
+
+        <input type="password" required="required" name="password"
+               class="login-element form-control mb-4 col-4" placeholder="password">
+
+        <input type="tel" required="required" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9}{3}"
+               class="form-control mb-4 col-4" placeholder="Numer kontaktowy">
+
+        <button type="submit" class="btn btn-info col-2">Dodaj</button>
+    </form>
+    <hr>
     <a th:href="@{/}">Powrót</a>
 
 </div>

@@ -4,15 +4,17 @@ import com.DawidM.SavingDataCar.Services.RepairService;
 import com.DawidM.SavingDataCar.entity.Repair;
 import com.DawidM.SavingDataCar.repository.RepairRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class RepairServiceImpl implements RepairService {
 
     RepairRepository repairRepository;
 
     @Autowired
-    RepairServiceImpl(RepairRepository repairRepository){
+    public RepairServiceImpl(RepairRepository repairRepository){
         this.repairRepository = repairRepository;
     }
 

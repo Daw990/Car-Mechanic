@@ -29,6 +29,7 @@
             <td>Marka</td>
             <td>Model</td>
             <td>Rocznik</td>
+            <td>Rodzaj silnika</td>
         </tr>
         </thead>
     <tbody>
@@ -36,15 +37,16 @@
         <td th:text="${car.markCar}"></td>
         <td th:text="${car.modelCar}"></td>
         <td th:text="${car.year}"></td>
+        <td th:text="${car.engineType}"></td>
         <td>
             <!-- update button -->
-            <a th:href="@{/cars/editCar(carId=${car.CarId})}"
+            <a th:href="@{/cars/editCar(id=${car.idCar})}"
                class="btn btn-info btn-sm">
                 Edytuj
             </a>
 
             <!-- delete button -->
-            <a th:href="@{/cars/delete(carId=${car.CarId})}"
+            <a th:href="@{/cars/delete(idCar=${car.idCar})}"
                class="btn btn-danger btn-sm"
                onclick="if (!(confirm('Jesteś pewny/a że chcesz usunąć?'))) return false">
                 Usuń
@@ -56,5 +58,8 @@
     </tbody>
     </table>
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
