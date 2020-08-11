@@ -30,7 +30,7 @@ public class CarController {
     }
 
     @RequestMapping("/list") //patch to list of cars
-    public String getCars(Model model, Authentication authentication){
+    public String getCars(Model model){
 
         long idUser = signUpService.getAuthenticatedUserId();
         List<Car> allCars = carService.getAuthenticatedUserCars(idUser);
@@ -61,7 +61,7 @@ public class CarController {
 
     @PostMapping("/save") //action for "dodaj" in carform.html
     public String saveCar(@ModelAttribute("car") Car car, Authentication authentication){
-        authentication.getName();
+
         User user = (User) userDetailsService.loadUserByUsername(authentication.getName());
 
         if(car.getIdCar() == null ){

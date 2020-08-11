@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/css/login.css" >
+    <link rel="stylesheet" type="text/css" href="/css/style.css" >
+    <title>Car List</title>
+</head>
+
+<body>
+<div th:insert="menu.html :: nav"></div>
+
+<div class="container">
+
+    <h3><b>Dodaj Naprawę: </b></h3>
+    <hr>
+
+    <form action="#" th:action="@{/user/saveRepair}"
+          th:object="${repair}" th:method="POST">
+
+        <input type="hidden" th:field="*{idRepair}"/>
+
+        <div class="form-group">
+            <select class="form-control mb-4 col-4" placeholder="Typ naprawy" required="required" th:field="*{category}">
+                <option value=disabled>Wybierz Kategorię</option>
+                <option value="vulcanization">Wulkanizacja</option>
+                <option value="mechanics">Mechanika</option>
+                <option value="electrics">Elektryka</option>
+                <option value="airConditioning">Klimatyzacja</option>
+            </select>
+        </div>
+
+        <input type="text" required="required" th:field="*{fault}"
+               class="form-control mb-4 col-4" placeholder="Nazwa np.: Wymiana klocków hamulcowych">
+
+        <input type="text" required="required" th:field="*{repairPrice}"
+               class="form-control mb-4 col-4" placeholder="Podaj cenę naprawy/wymiany">
+
+        <input type="number" required="required" step="15" min="15" value="15" th:field="*{repairTime}"
+               class="form-control mb-4 col-4" placeholder="Podaj czas trwania usługi">
+
+        <button type="submit" class="btn btn-info col-2">Dodaj</button>
+    </form>
+    <hr>
+    <a th:href="@{/user/repairsList}">Powrót do cennika</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

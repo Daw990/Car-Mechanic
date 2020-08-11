@@ -16,5 +16,10 @@ public class WebController {
         return "login";
     }
 
+    @GetMapping(value = "/test")
+    public String test3() {
+        return "user/date/index3";
+    }
+
 
 }

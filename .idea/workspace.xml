@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d75f5f2-7964-45a2-b080-9d32d55d5c80" name="Default Changelist" comment="added login page, index, WebController and security config. carEdit and carform moved to actionsCars folder in templates and some fixes.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/VisitServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/VisitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/UserVisitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/custom/VisitHours.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/VisitRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery.datetimepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery.datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/tree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/white_carbon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/y-so-serious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.datetimepicker.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.datetimepicker.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/password_check.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/repair-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/repair-list-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/repair-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/visit-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/visit-hours-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/DateAndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/custom/DateAndTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/RepairServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/RepairServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/RepairService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/RepairService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Repair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Repair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Visit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/RepairRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/RepairRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/siteRepairs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/carform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/carform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list-time.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list-time.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/admin-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/admin-panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/user-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user-panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/user-sign-up2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user-sign-up2.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="SavingDataCar/invalid/Web" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectId" id="1ZoLQjIyYaGV5YSPZIO0XbFLC79" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587411124639" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.DawidM.SavingDataCar" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\templates\user\date" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\css" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\images" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\img" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\js" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\css" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SavingDataCarApplication">
+    <configuration name="SavingDataCarApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.DawidM.SavingDataCar.SavingDataCarApplication" />
+      <module name="SavingDataCar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.DawidM.SavingDataCar.custom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="static in SavingDataCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SavingDataCar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="static.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="static" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SavingDataCarApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SavingDataCar" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.DawidM.SavingDataCar.SavingDataCarApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SavingDataCarApplication" />
+        <item itemvalue="JUnit.static in SavingDataCar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d75f5f2-7964-45a2-b080-9d32d55d5c80" name="Default Changelist" comment="" />
+      <created>1576081469345</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576081469345</updated>
+      <workItem from="1585500492381" duration="2973000" />
+      <workItem from="1587548031854" duration="7000" />
+      <workItem from="1588672228411" duration="25000" />
+      <workItem from="1588673931931" duration="879000" />
+    </task>
+    <task id="LOCAL-00001" summary="added login page, index, WebController and security config. carEdit and carform moved to actionsCars folder in templates and some fixes.">
+      <created>1585394411367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585394411367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added login page, index, WebController and security config. carEdit and carform moved to actionsCars folder in templates and some fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="added login page, index, WebController and security config. carEdit and carform moved to actionsCars folder in templates and some fixes." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2040" y="94" key="#Project_Structure" timestamp="1595694479884">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2040" y="94" key="#Project_Structure/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1595694479884" />
+    <state x="2013" y="294" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595267162132">
+      <screen x="1600" y="0" width="1280" height="984" />
+    </state>
+    <state x="2013" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595267162132" />
+    <state x="2058" y="109" key="#com.intellij.ide.util.MemberChooser" timestamp="1595347768542">
+      <screen x="1600" y="0" width="1280" height="984" />
+    </state>
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1593166177189" />
+    <state x="-878" y="464" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1594238266675" />
+    <state x="572" y="95" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594384626688" />
+    <state x="2058" y="109" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595347768542" />
+    <state x="231" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592315657354">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="231" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1592315657354" />
+    <state x="-900" y="617" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594120806186">
+      <screen x="-1366" y="384" width="1366" height="728" />
+    </state>
+    <state x="-900" y="617" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1594120806186" />
+    <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1592315659321">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1592315659321" />
+    <state x="579" y="267" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1594072835098">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="579" y="267" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594072835098" />
+    <state x="489" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593637137114">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="489" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1593637137114" />
+    <state x="1987" y="150" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595530915762">
+      <screen x="1600" y="0" width="1280" height="984" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592317676005" />
+    <state x="484" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594244441177" />
+    <state x="1987" y="150" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595530915762" />
+    <state x="621" y="127" key="FileChooserDialogImpl" timestamp="1596563491672">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="621" y="127" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596563491672" />
+    <state x="727" y="150" key="FileChooserDialogImpl/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594458888929" />
+    <state x="2182" y="172" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595260097157" />
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1597151928653">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="167" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596891867754" />
+    <state width="1323" height="518" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1594239205340" />
+    <state width="1557" height="150" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594503824393" />
+    <state width="1557" height="159" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276982" />
+    <state width="1088" height="175" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
+    <state width="1557" height="207" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151928653" />
+    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1597151928653">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="167" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596891867754" />
+    <state width="1323" height="518" key="GridCell.Tab.0.center/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1594239205340" />
+    <state width="1557" height="150" key="GridCell.Tab.0.center/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594503824393" />
+    <state width="1557" height="159" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276981" />
+    <state width="1088" height="175" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
+    <state width="1557" height="207" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
+    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151928653" />
+    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1597151928653">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="167" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596891867738" />
+    <state width="1323" height="518" key="GridCell.Tab.0.left/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1594239205340" />
+    <state width="1557" height="150" key="GridCell.Tab.0.left/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594503824393" />
+    <state width="1557" height="159" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276981" />
+    <state width="1088" height="175" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
+    <state width="1557" height="207" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
+    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151928653" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1597151928653">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="167" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596891867754" />
+    <state width="1323" height="518" key="GridCell.Tab.0.right/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1594239205340" />
+    <state width="1557" height="150" key="GridCell.Tab.0.right/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594503824393" />
+    <state width="1557" height="159" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276982" />
+    <state width="1088" height="175" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
+    <state width="1557" height="207" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151928653" />
+    <state width="1877" height="224" key="GridCell.Tab.1.bottom" timestamp="1597151558807">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1073" height="141" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596635785478" />
+    <state width="1877" height="224" key="GridCell.Tab.1.bottom/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151558807" />
+    <state width="1877" height="224" key="GridCell.Tab.1.center" timestamp="1597151558807">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1073" height="141" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596635785478" />
+    <state width="1877" height="224" key="GridCell.Tab.1.center/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151558807" />
+    <state width="1877" height="224" key="GridCell.Tab.1.left" timestamp="1597151558807">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1073" height="141" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596635785478" />
+    <state width="1877" height="224" key="GridCell.Tab.1.left/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151558807" />
+    <state width="1877" height="224" key="GridCell.Tab.1.right" timestamp="1597151558807">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1073" height="141" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596635785478" />
+    <state width="1877" height="224" key="GridCell.Tab.1.right/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151558807" />
+    <state x="2185" y="94" key="RollbackChangesDialog" timestamp="1595695619487">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="416" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592316245152" />
+    <state x="2185" y="94" key="RollbackChangesDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1595695619487" />
+    <state x="216" y="11" key="SettingsEditor" timestamp="1593971376331">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592308648165" />
+    <state x="216" y="11" key="SettingsEditor/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1593971376331" />
+    <state x="1692" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597143317629">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1692" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597143317629" />
+    <state x="508" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1588673934681">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="434" y="218" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588672235338" />
+    <state x="508" y="258" key="com.intellij.ide.util.TipDialog/0.0.1600.860/-1366.-1.1366.728@0.0.1600.860" timestamp="1588673934681" />
+    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596561297257">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1596561297257" />
+    <state x="204" y="110" width="1411" height="792" key="dock-window-1" timestamp="1597151130747">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="-1299" y="384" width="1230" height="815" key="dock-window-1/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594378967076" />
+    <state x="699" y="9" width="878" height="774" key="dock-window-1/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595429586612" />
+    <state x="204" y="110" width="1411" height="792" key="dock-window-1/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151130747" />
+    <state x="-1366" y="384" width="661" height="815" key="dock-window-2" timestamp="1594386726496">
+      <screen x="-1366" y="384" width="1366" height="728" />
+    </state>
+    <state x="-1366" y="384" width="661" height="815" key="dock-window-2/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594386726496" />
+    <state x="-784" y="376" width="679" height="815" maximized="true" key="dock-window-3" timestamp="1594391966009">
+      <screen x="-1366" y="384" width="1366" height="728" />
+    </state>
+    <state x="-784" y="376" width="679" height="815" maximized="true" key="dock-window-3/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594391966009" />
+    <state x="131" y="50" key="new project wizard" timestamp="1596563523760">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="131" y="50" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1596563523760" />
+    <state x="1942" y="181" key="new project wizard/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1595701514112" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592309147247">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592309147247" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/VisitServiceImpl.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/VisitServiceImpl.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/VisitServiceImpl.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
