@@ -35,9 +35,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //kazde zadanie moze byc wykonane przez zalogowanego uzytkownika domyslnie ponizej jawnie
         http
                 .authorizeRequests()
-                .antMatchers("/login", "/","/sign_up").permitAll() //static tez trzeb dodac zeby style sie ladowaly
-                .antMatchers("/user/newUser","/user/save").permitAll()
-                .antMatchers("/css/**").permitAll()
+                .antMatchers("/login", "/","/sign_up","/test").permitAll() //static tez trzeb dodac zeby style sie ladowaly
+                .antMatchers("/css/**","/js/**","/images/**").permitAll()
+                .antMatchers("/user/newUser","/user/save","/user/makeVisit").permitAll()
+                .antMatchers("/user/repairsList").permitAll()
                 //.antMatchers("/user/adminPanel", "/user/userPanel").hasAnyAuthority()
                 .anyRequest().authenticated()
                 .and()

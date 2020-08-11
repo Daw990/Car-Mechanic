@@ -1,0 +1,17 @@
+Index: src/main/java/com/DawidM/SavingDataCar/config/SecurityConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.DawidM.SavingDataCar.config;\r\n\r\nimport org.springframework.context.annotation.Bean;\r\nimport org.springframework.security.config.annotation.web.builders.HttpSecurity;\r\nimport org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;\r\nimport org.springframework.security.core.userdetails.User;\r\nimport org.springframework.security.core.userdetails.UserDetails;\r\nimport org.springframework.security.core.userdetails.UserDetailsService;\r\nimport org.springframework.security.provisioning.InMemoryUserDetailsManager;\r\nimport org.springframework.stereotype.Component;\r\n\r\n@Component\r\npublic class SecurityConfig extends WebSecurityConfigurerAdapter {\r\n\r\n    @Bean\r\n    public UserDetailsService userDetailsService(){\r\n\r\n        UserDetails adminDetails = User.withDefaultPasswordEncoder()\r\n                .username(\"admin1\")\r\n                .password(\"admin1\")\r\n                .roles(\"ADMIN\")\r\n                .build();\r\n        return new InMemoryUserDetailsManager(adminDetails);\r\n    }\r\n\r\n    @Override\r\n    protected void configure(HttpSecurity http) throws Exception{\r\n\r\n        http.authorizeRequests()\r\n                .antMatchers(\"/\").permitAll()\r\n                .antMatchers(\"/cars/**\").hasRole(\"ADMIN\")\r\n                .anyRequest().fullyAuthenticated()\r\n                .and()\r\n                .formLogin().loginPage(\"/login\").permitAll()\r\n                .defaultSuccessUrl(\"/cars\")\r\n                .and()\r\n                .logout()\r\n                .logoutSuccessUrl(\"/\");\r\n        http.csrf().disable();\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/com/DawidM/SavingDataCar/config/SecurityConfig.java	(revision e0b09607b2ebd27fa63a91157ba36861be896731)
++++ src/main/java/com/DawidM/SavingDataCar/config/SecurityConfig.java	(date 1585394972541)
+@@ -26,6 +26,7 @@
+     @Override
+     protected void configure(HttpSecurity http) throws Exception{
+ 
++
+         http.authorizeRequests()
+                 .antMatchers("/").permitAll()
+                 .antMatchers("/cars/**").hasRole("ADMIN")

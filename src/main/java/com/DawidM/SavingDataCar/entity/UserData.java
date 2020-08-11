@@ -1,13 +1,10 @@
 package com.DawidM.SavingDataCar.entity;
 
-import com.DawidM.SavingDataCar.DateAndTime;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table

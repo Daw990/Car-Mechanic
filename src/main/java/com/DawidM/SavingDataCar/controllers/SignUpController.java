@@ -1,6 +1,6 @@
 package com.DawidM.SavingDataCar.controllers;
 
-import com.DawidM.SavingDataCar.DateAndTime;
+import com.DawidM.SavingDataCar.custom.DateAndTime;
 import com.DawidM.SavingDataCar.Services.SignUpService;
 import com.DawidM.SavingDataCar.entity.User;
 import com.DawidM.SavingDataCar.entity.UserData;
@@ -23,7 +23,7 @@ public class SignUpController {
     public String signUp(@RequestParam("username") String username, @RequestParam("password") String password, //username - email
                          @RequestParam("phoneNumber") String phoneNumber, @RequestParam("firstName") String firstName,
                          @RequestParam("secondName") String secondName){
-        User user = new User(username, password);
+        User user = User.of(username, password);
         UserData userData = new UserData(firstName, secondName, phoneNumber, DateAndTime.getDateAndTime());
         signUpService.signUpUser(user, userData);
 

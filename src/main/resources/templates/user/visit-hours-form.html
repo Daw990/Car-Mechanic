@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.springframework.org/security/tags">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.datetimepicker.min.css" >
+
+    <link rel="stylesheet" type="text/css" href="/css/login.css" >
+    <link rel="stylesheet" type="text/css" href="/css/style.css" >
+    <title>Wizyta</title>
+</head>
+<body>
+<div th:insert="menu.html :: nav"></div>
+
+<div class="container">
+    
+    <h3>Dostępne godziny:</h3>
+    <hr>
+    <form th:action="@{/user/saveVisit(date=${visit.visitDate})}" th:object="${visit}" th:method="POST">
+
+        <div th:text="${visit.visitDate}"></div>
+        <div th:text="${repair.fault}" ></div>
+
+        <input type="hidden" name="idRepair" th:field="${repair.idRepair}">
+        <div class="selectors">
+            Wybierz samochód:
+
+            <div class="form-inline">
+                    <select class="form-control mr-1 col-4" placeholder="Wybierz samochód"
+                            required="required" th:field="${visit.car}">
+                        <option th:each="car: ${cars}" th:value="${car.idCar}"
+                                th:text="${car.markCar} + ' ' + ${car.modelCar}">
+                        </option>
+                    </select>
+                    <a th:href="@{/cars/newCar}" class="btn btn-info">Dodaj Samochód</a>
+            </div>
+        </div>
+
+        <div class="selectors">
+            Wybierz godzinę:
+
+            <select class="form-control mb-4 col-4" placeholder="godzina" required="required"
+                    th:field="*{visitTime}">
+                <option th:each="hour: ${hours}" th:value="${hour}" th:text="${hour}">
+                </option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary col-2">Dodaj</button>
+
+    </form>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
