@@ -18,13 +18,40 @@
 
 <div class="container">
 
-    <br>
-    <h3><b>Panel Użytkownika o id:</b></h3>
+    <h3><b>Panel Użytkownika</b></h3>
     <hr>
     <br>
-    <a th:text="${userId}"></a>
     <span sec:authentication="name"></span>
 
+    <div class="row userPanelBox">
+        <div class="col-3">Imię: </div>
+        <div class="col" th:text="${user.userData.firstName}"></div>
+    </div>
+
+    <div class="row userPanelBox">
+        <div class="col-3">Nazwisko: </div>
+        <div class="col" th:text="${user.userData.secondName}"></div>
+    </div>
+
+    <div class="row userPanelBox">
+        <div class="col-3">Numer telefonu: </div>
+        <div class="col" th:text="${user.userData.phoneNumber}"></div>
+    </div>
+
+    <div class="row userPanelBox">
+        <a th:href="@{/user/repairsList}"
+           class="btn btn-info btn-space">
+            Zarządzaj cennikiem
+        </a>
+        <a th:href="@{/cars/list}"
+           class="btn btn-info btn-space">
+            Zarządzaj samochodami
+        </a>
+        <a th:href="@{/user/visit/visitList}"
+           class="btn btn-info btn-space">
+            Wizyty
+        </a>
+    </div>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

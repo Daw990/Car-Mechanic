@@ -1,7 +1,8 @@
 package com.DawidM.SavingDataCar.Services.Implementation;
 
 import com.DawidM.SavingDataCar.Services.SignUpService;
-import com.DawidM.SavingDataCar.entity.Car;
+import com.DawidM.SavingDataCar.component.mailBuilder.SignUpMail;
+import com.DawidM.SavingDataCar.component.mailBuilder.StringFactory;
 import com.DawidM.SavingDataCar.entity.Role;
 import com.DawidM.SavingDataCar.entity.User;
 import com.DawidM.SavingDataCar.entity.UserData;
@@ -21,19 +22,24 @@ import java.util.Optional;
 @Component
 public class SignUpServiceImpl implements SignUpService, SecurityContext {
 
+    private static final int TOKEN_LENGTH = 20;
+
     private UserRepository userRepository;
     private UserDataRepository userDataRepository;
     private PasswordEncoder passwordEncoder;
     private RoleRepository roleRepository;
+    private SignUpMail signUpMail;
     
     @Autowired
     public SignUpServiceImpl(UserRepository userRepository, PasswordEncoder passwordEncoder,
-                             UserDataRepository userDataRepository, RoleRepository roleRepository){
+                             UserDataRepository userDataRepository, RoleRepository roleRepository,
+                             SignUpMail signUpMail){
 
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.userDataRepository = userDataRepository;
         this.roleRepository = roleRepository;
+        this.signUpMail = signUpMail;
     }
 
     @Override
@@ -46,17 +52,20 @@ public class SignUpServiceImpl implements SignUpService, SecurityContext {
         if(findRole.isPresent()){//jezeli udasie pobrac role to bedziemy ja przypisaywac
             user.getRoles().add(findRole.get());
         }
-
+        String token = StringFactory.getRandomString(TOKEN_LENGTH);
+        user.setConfirmationToken(token);
+        signUpMail.sendConfirmationLink(user.getEmail(), token);
         user.setUserData(userData);
         userRepository.save(user);
         userDataRepository.save(userData);
+
     }
 
+    @Override
     public long getAuthenticatedUserId(){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         User user =(User)authentication.getPrincipal();
-        long userId = user.getIdUser();
-        return userId;
+        return user.getIdUser();
     }
 
     @Override

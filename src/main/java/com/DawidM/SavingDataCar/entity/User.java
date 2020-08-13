@@ -25,6 +25,10 @@ public class User implements UserDetails {
     private String email;
     @Column
     private String password;
+    @Column
+    private String confirmationToken;
+    @Column(columnDefinition = "boolean default false")
+    private boolean enabled;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn
@@ -52,6 +56,7 @@ public class User implements UserDetails {
         super();
         this.email = email;
         this.password = password;
+        this.enabled = false;
     }
 
     // User Builder
@@ -60,6 +65,7 @@ public class User implements UserDetails {
         User user = new User();
         user.setEmail(email);
         user.setPassword(password);
+        user.setEnabled(false);
         user.roles = new ArrayList<Role>();
 
         return user;
@@ -86,12 +92,17 @@ public class User implements UserDetails {
          //learn streams. map: operacja na kazdym elemencie strumienia
                                             // r-kazdy obiektr przekazywany do konstruktora.
                                              //przekonwertowanie stringa z rolami do obiektu implementujacego interfejs:
-                                            // SimpleGrantedAuthority i trzeba zworiocic kolekce
+                                            // SimpleGrantedAuthority i trzeba zwracamy kolekcje
     }
 
     @Override
     public String getUsername() {
         return email;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return enabled;
     }
 
     @Override
@@ -109,8 +120,5 @@ public class User implements UserDetails {
         return true;
     }
 
-    @Override
-    public boolean isEnabled() {
-        return true;
-    }
+
 }

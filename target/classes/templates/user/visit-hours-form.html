@@ -17,10 +17,10 @@
 <div th:insert="menu.html :: nav"></div>
 
 <div class="container">
-    
+
     <h3>Dostępne godziny:</h3>
     <hr>
-    <form th:action="@{/user/saveVisit(date=${visit.visitDate})}" th:object="${visit}" th:method="POST">
+    <form th:action="@{/user/visit/saveVisit(date=${visit.visitDate})}" th:object="${visit}" th:method="POST">
 
         <div th:text="${visit.visitDate}"></div>
         <div th:text="${repair.fault}" ></div>

@@ -13,6 +13,4 @@ public interface VisitRepository extends JpaRepository<Visit, Long> {
 
     @Query("select i from Visit i where i.visitDate=:date")
     List<Visit> getVisitByDate(@Param("date") String date);
-
-
 }

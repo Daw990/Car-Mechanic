@@ -4,54 +4,47 @@ import com.DawidM.SavingDataCar.custom.DateAndTime;
 import com.DawidM.SavingDataCar.Services.SignUpService;
 import com.DawidM.SavingDataCar.entity.User;
 import com.DawidM.SavingDataCar.entity.UserData;
+import com.DawidM.SavingDataCar.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/")
 public class SignUpController {
 
     private SignUpService signUpService;
+    private UserRepository userRepository;
 
     @Autowired
-    public SignUpController(SignUpService signUpService){
+    public SignUpController(SignUpService signUpService, UserRepository userRepository){
         this.signUpService = signUpService;
+        this.userRepository = userRepository;
     }
 
     @PostMapping(value="/sign_up")
     public String signUp(@RequestParam("username") String username, @RequestParam("password") String password, //username - email
                          @RequestParam("phoneNumber") String phoneNumber, @RequestParam("firstName") String firstName,
                          @RequestParam("secondName") String secondName){
-        User user = User.of(username, password);
-        UserData userData = new UserData(firstName, secondName, phoneNumber, DateAndTime.getDateAndTime());
-        signUpService.signUpUser(user, userData);
 
-        return "redirect:/login";
+        Optional<User> optionalUser = userRepository.findByEmail(username);
+
+        if(!optionalUser.isPresent()) {
+            User user = User.of(username, password);
+            UserData userData = new UserData(firstName, secondName, phoneNumber, DateAndTime.getDateAndTime());
+            signUpService.signUpUser(user, userData);
+            return "redirect:/login?signUpSuccess";
+        }else
+            return "redirect:/sign_up?emailError";
+
     }
 
     @GetMapping(value = "/sign_up")
     public String signUp(){
-        return "user/user-sign-up2";
+        return "user/user-sign-up";
     }
 
-//    @RequestMapping("/newUser") //patch u see in browser
-//    public String createCar(Model model) {
-//        model.addAttribute("user", new User());
-//        model.addAttribute("userData", new UserData());
-//        return "user/user-sign-up";  // name of file html
-//    }
-//
-//    @PostMapping("/save") //action for "zarejestruj" in user-sign-up.html
-//    public String saveUser(@ModelAttribute("user") User user, @ModelAttribute("userData") UserData userData){
-//
-//        userData.setDateRegistration(DateAndTime.getDateAndTime());
-//        user.setUserData(userData);
-//
-//        userService.save(user);
-//        userService.save(userData);
-//
-//        return "redirect:/user/userPanel";
-//    }
 
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.springframework.org/security/tags">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,8 +18,32 @@
 
 <div class="container">
 
-    <br>
-    <h3><b>Panel Admina</b></h3>
+    <h3><b>Lista Wizyt</b></h3>
+
+    <table class="table">
+        <thead class="thead-dark table-warning">
+        <tr>
+            <td>Data</td>
+            <td>Godz rozpoczęcia</td>
+            <td>Samochód</td>
+            <td>Rodzaj naprawy</td>
+            <td>Czas trwania</td>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr th:each="visit : ${visits}">
+            <td th:text="${visit.visitDate}"></td>
+            <td th:text="${visit.visitTime}"></td>
+            <td th:text="${visit.car.markCar} + ' ' + ${visit.car.modelCar}"></td>
+            <td th:text="${visit.repair.fault}"></td>
+            <td th:text="${visit.repair.repairTime}"></td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
 
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

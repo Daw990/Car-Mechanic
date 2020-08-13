@@ -30,10 +30,12 @@ public class CarController {
     }
 
     @RequestMapping("/list") //patch to list of cars
-    public String getCars(Model model){
+    public String getCars(Model model, Authentication authentication){
 
-        long idUser = signUpService.getAuthenticatedUserId();
-        List<Car> allCars = carService.getAuthenticatedUserCars(idUser);
+//        long idUser = signUpService.getAuthenticatedUserId();
+//        List<Car> allCars = carService.getAuthenticatedUserCars(idUser);
+        User user = (User) userDetailsService.loadUserByUsername(authentication.getName());
+        List<Car> allCars = user.getCars();
         model.addAttribute("cars", allCars);
 
         return "actionsCars/cars-list";

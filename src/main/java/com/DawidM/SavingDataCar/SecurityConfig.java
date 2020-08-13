@@ -35,11 +35,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //kazde zadanie moze byc wykonane przez zalogowanego uzytkownika domyslnie ponizej jawnie
         http
                 .authorizeRequests()
-                .antMatchers("/login", "/","/sign_up","/test").permitAll() //static tez trzeb dodac zeby style sie ladowaly
+                .antMatchers("/login", "/","/sign_up").permitAll() //static tez trzeb dodac zeby style sie ladowaly
                 .antMatchers("/css/**","/js/**","/images/**").permitAll()
                 .antMatchers("/user/newUser","/user/save","/user/makeVisit").permitAll()
-                .antMatchers("/user/repairsList").permitAll()
-                //.antMatchers("/user/adminPanel", "/user/userPanel").hasAnyAuthority()
+                .antMatchers("/user/repairsList","/confirm_email").permitAll()
                 .anyRequest().authenticated()
                 .and()
             .formLogin()//my login page
@@ -47,7 +46,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .defaultSuccessUrl("/user/userPanel")
                 .and()
             .logout()
-                .logoutSuccessUrl("/")
+                .logoutSuccessUrl("/?logout")
                 .and().csrf().disable();
     }
 
