@@ -20,56 +20,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d75f5f2-7964-45a2-b080-9d32d55d5c80" name="Default Changelist" comment="added login page, index, WebController and security config. carEdit and carform moved to actionsCars folder in templates and some fixes.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/VisitServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/VisitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/UserVisitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/custom/VisitHours.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/VisitRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery.datetimepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery.datetimepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/tree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/white_carbon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/y-so-serious.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.datetimepicker.full.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.datetimepicker.full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.datetimepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.datetimepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/password_check.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/repair-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/repair-list-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/repair-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/visit-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/visit-hours-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/component/mailBuilder/SignUpMail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/component/mailBuilder/SignUpMailFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/component/mailBuilder/StringFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/email.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SavingDataCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SavingDataCar.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/DateAndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/custom/DateAndTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/RepairServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/RepairServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/RepairService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/RepairService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/SignUpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/SignUpServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/CarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/SignUpController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/UserVisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/UserVisitController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/WebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Repair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Repair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Visit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/CarRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/RepairRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/RepairRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/custom/VisitHours.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/siteRepairs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/tree.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/y-so-serious.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/password_check.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/carform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/carform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list-time.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list-time.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list-time.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/admin-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/admin-panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/admin-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/visit-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/repair-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/repair-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/repair-list-edit.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/user-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user-panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/user-sign-up2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user-sign-up2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/user-sign-up2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user-sign-up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/visit-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/visit-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SavingDataCar.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/Services/Implementation/SignUpServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/Services/Implementation/SignUpServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/SignUpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/UserVisitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/UserVisitController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/WebController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/WebController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/custom/VisitHours.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/tree.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/y-so-serious.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/password_check.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/actionsCars/carform.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/actionsCars/carform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/actionsCars/cars-list-time.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/actionsCars/cars-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/actionsCars/cars-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/admin-panel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/repair-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/repair-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/repair-list-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/user-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/user-panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/user-sign-up2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/visit-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/visit-form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,27 +125,30 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587411124639" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="G:/programowanie/PracaInzynierska/SavingDataCar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dawid-Laptop\Desktop\Car-Mechanic-master\Car-Mechanic\src\main\resources" />
+      <recent name="C:\Users\Dawid-Laptop\Desktop\Car-Mechanic-master\Car-Mechanic\src\main\resources\templates\user" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\images" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\img" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\js" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.DawidM.SavingDataCar" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.DawidM.SavingDataCar.component.mailBuilder" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\templates\user\date" />
       <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\css" />
       <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\images" />
-      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\img" />
-      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\js" />
-      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\css" />
-      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static" />
     </key>
   </component>
   <component name="RunManager" selected="Application.SavingDataCarApplication">
@@ -248,10 +267,11 @@
     <state x="-878" y="464" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1594238266675" />
     <state x="572" y="95" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594384626688" />
     <state x="2058" y="109" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595347768542" />
-    <state x="231" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592315657354">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1925" y="411" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597324873228">
+      <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="231" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1592315657354" />
+    <state x="1925" y="411" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597324873228" />
     <state x="-900" y="617" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594120806186">
       <screen x="-1366" y="384" width="1366" height="728" />
     </state>
@@ -274,13 +294,14 @@
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592317676005" />
     <state x="484" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594244441177" />
     <state x="1987" y="150" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595530915762" />
-    <state x="621" y="127" key="FileChooserDialogImpl" timestamp="1596563491672">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="2473" y="181" key="FileChooserDialogImpl" timestamp="1597324761047">
+      <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="621" y="127" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596563491672" />
     <state x="727" y="150" key="FileChooserDialogImpl/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594458888929" />
     <state x="2182" y="172" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595260097157" />
-    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1597151928653">
+    <state x="2473" y="181" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597324761047" />
+    <state width="1877" height="215" key="GridCell.Tab.0.bottom" timestamp="1597328812151">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="167" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596891867754" />
@@ -289,8 +310,8 @@
     <state width="1557" height="159" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276982" />
     <state width="1088" height="175" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
     <state width="1557" height="207" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
-    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151928653" />
-    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1597151928653">
+    <state width="1877" height="215" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597328812151" />
+    <state width="1877" height="215" key="GridCell.Tab.0.center" timestamp="1597328812151">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="167" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596891867754" />
@@ -299,8 +320,8 @@
     <state width="1557" height="159" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276981" />
     <state width="1088" height="175" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
     <state width="1557" height="207" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
-    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151928653" />
-    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1597151928653">
+    <state width="1877" height="215" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597328812151" />
+    <state width="1877" height="215" key="GridCell.Tab.0.left" timestamp="1597328812150">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="167" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596891867738" />
@@ -309,8 +330,8 @@
     <state width="1557" height="159" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276981" />
     <state width="1088" height="175" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
     <state width="1557" height="207" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
-    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151928653" />
-    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1597151928653">
+    <state width="1877" height="215" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597328812150" />
+    <state width="1877" height="215" key="GridCell.Tab.0.right" timestamp="1597328812151">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="167" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596891867754" />
@@ -319,7 +340,7 @@
     <state width="1557" height="159" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276982" />
     <state width="1088" height="175" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
     <state width="1557" height="207" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
-    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597151928653" />
+    <state width="1877" height="215" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597328812151" />
     <state width="1877" height="224" key="GridCell.Tab.1.bottom" timestamp="1597151558807">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
@@ -354,11 +375,6 @@
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="1692" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597143317629" />
-    <state x="508" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1588673934681">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="434" y="218" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588672235338" />
-    <state x="508" y="258" key="com.intellij.ide.util.TipDialog/0.0.1600.860/-1366.-1.1366.728@0.0.1600.860" timestamp="1588673934681" />
     <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596561297257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -386,26 +402,5 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592309147247" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/VisitServiceImpl.java</url>
-          <line>98</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/VisitServiceImpl.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/Services/Implementation/VisitServiceImpl.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -30,10 +30,10 @@ public class CarController {
     }
 
     @RequestMapping("/list") //patch to list of cars
-    public String getCars(Model model){
+    public String getCars(Model model, Authentication authentication){
 
-        long idUser = signUpService.getAuthenticatedUserId();
-        List<Car> allCars = carService.getAuthenticatedUserCars(idUser);
+        User user = (User) userDetailsService.loadUserByUsername(authentication.getName());
+        List<Car> allCars = user.getCars();
         model.addAttribute("cars", allCars);
 
         return "actionsCars/cars-list";
@@ -52,12 +52,6 @@ public class CarController {
 
         return "actionsCars/carform"; // name of file html
     }
-
-//    @RequestMapping(value="/editcars", method = RequestMethod.POST) //click button in site /car/editcar
-//    public String editCar(Car car){
-//        carService.save(car);
-//        return "redirect:/cars/list"; //back to list of cars
-//    }
 
     @PostMapping("/save") //action for "dodaj" in carform.html
     public String saveCar(@ModelAttribute("car") Car car, Authentication authentication){
@@ -79,12 +73,4 @@ public class CarController {
         carService.deleteById(id);
         return "redirect:/cars/list";
     }
-
-//    @RequestMapping("/editCar/{id}")
-//    public String editCar(Model model) {
-//        model.getAttribute(service.getCar(id));
-//        service.getCar(id);
-//        return "carform";
-//    }
-
 }

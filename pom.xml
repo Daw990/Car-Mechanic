@@ -57,6 +57,11 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>org.thymeleaf.extras</groupId> <!--need this for look when change roles user cant see options of admin-->
 			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
 		</dependency>

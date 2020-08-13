@@ -20,6 +20,7 @@
     
     <h3>Dostępne godziny:</h3>
     <hr>
+
     <form th:action="@{/user/saveVisit(date=${visit.visitDate})}" th:object="${visit}" th:method="POST">
 
         <div th:text="${visit.visitDate}"></div>

@@ -18,9 +18,9 @@
 
 <div class="container">
 
-    <br>
-    <h2 style="text-align:center"><b>Cennik</b></h2>
+    <h3>Cennik</h3>
     <hr>
+
     <h6 sec:authorize="hasAuthority('USER')">(kliknij "wybierz" aby zaplanować wizytę)</h6>
     <br>
     <a sec:authorize="hasAuthority('ADMIN')" th:href="@{/user/newRepair}"

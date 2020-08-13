@@ -10,21 +10,24 @@
 
     <link rel="stylesheet" type="text/css" href="/css/login.css" >
     <link rel="stylesheet" type="text/css" href="/css/style.css" >
-    <title>Type of Service</title>
+
+    <title>Strona Główna</title>
 </head>
 
 <body>
+<div class="logout-info" th:if="${param.logout}">
+    <div>Zostałeś poprawnie wylogowany</div>
+</div>
+
 <div th:insert="menu.html :: nav"></div>
 
 <div class="container">
 
-    <br>
-    <h3><b>Strona Główna</b></h3>
+    <h3>Strona Główna</h3>
     <hr>
 
     <img th:src="@{images/logo.png}" width="20%" height="20%">
 
-    <img src="/images/tree.jpg" width="10%" height="10%">
     <a th:href="@{/}">Powrót</a>
 
 </div>

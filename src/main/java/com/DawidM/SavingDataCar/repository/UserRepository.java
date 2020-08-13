@@ -8,4 +8,6 @@ import java.util.Optional;
 public interface UserRepository extends JpaRepository<User, Long> {
 
     Optional<User> findByEmail(String username);  //querry metods from name
+
+    Optional<User> findByConfirmationToken(String token);
 }
