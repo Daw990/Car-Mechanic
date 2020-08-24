@@ -7,13 +7,13 @@ h3{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
-
 }
+
 .navbar {
    background-color: #e0dcce;
    width: 100%;
-   padding-left: 160px;
-   padding-right: 160px;
+   padding-left: 10%;
+   padding-right: 10%;
 }
 
 .selectors{

@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pwstrength-bootstrap/2.2.1/pwstrength-bootstrap.min.js"></script>
+
+    <script src="/js/pwStrength.js"></script>
+    <script src="/js/password.validation.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="/css/login.css" >
     <link rel="stylesheet" type="text/css" href="/css/style.css" >
+    <link rel="stylesheet" type="text/css" href="/css/password.validation.css" >
 
     <title>Sign up</title>
 </head>
@@ -55,11 +58,18 @@
                 <div class="form-group">
                     <div id="pwd-container">
                         <div class="spacePassword">
-                            <input type="password" class="form-control login-element" minlength="8" name="password"
-                                   required="required" id="password" placeholder="Hasło">
+                            <input type="password" class="form-control login-element" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                   name="password" required="required" id="password" placeholder="Hasło"
+                                   title="Hasło musi posiadać conajmniej 8 znaków, duzą i małą literę oraz cyfrę">
                         </div>
-                        <div class="pwstrength_viewport_progress">
-                            <div id="messages" class="float-right"></div>
+                        <div class="pwstrength_viewport_progress"></div>
+                    </div>
+                    <div id="message">
+                        <div class="form-inline">
+                            <p id="letter" class="invalid btn-space"><b>Małe</b> litery</p>
+                            <p id="capital" class="invalid btn-space"><b>Duże</b> litery</p>
+                            <p id="number" class="invalid btn-space"><b>Cyfra</b></p>
+                            <p id="length" class="invalid btn-space">Min <b>8 znaków</b></p>
                         </div>
                     </div>
                 </div>
@@ -107,14 +117,67 @@ confirm_password.onkeyup = validatePassword;
         },
         showVerdictsInsideProgressBar: true
     };
-    options.common = {
-        debug: true,
-        onLoad: function () {
-            $('#messages').text('Siła hasła');
-        }
-    };
     $('#password').pwstrength(options);
 });
+</script>
+<script>
+    var myInput = document.getElementById("password");
+    var letter = document.getElementById("letter");
+    var capital = document.getElementById("capital");
+    var number = document.getElementById("number");
+    var length = document.getElementById("length");
+
+    // When the user clicks on the password field, show the message box
+    myInput.onfocus = function() {
+      document.getElementById("message").style.display = "block";
+    }
+
+    // When the user clicks outside of the password field, hide the message box
+    myInput.onblur = function() {
+      document.getElementById("message").style.display = "none";
+    }
+
+    // When the user starts to type something inside the password field
+    myInput.onkeyup = function() {
+      // Validate lowercase letters
+      var lowerCaseLetters = /[a-z]/g;
+      if(myInput.value.match(lowerCaseLetters)) {
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+      } else {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
+    }
+
+      // Validate capital letters
+      var upperCaseLetters = /[A-Z]/g;
+      if(myInput.value.match(upperCaseLetters)) {
+        capital.classList.remove("invalid");
+        capital.classList.add("valid");
+      } else {
+        capital.classList.remove("valid");
+        capital.classList.add("invalid");
+      }
+
+      // Validate numbers
+      var numbers = /[0-9]/g;
+      if(myInput.value.match(numbers)) {
+        number.classList.remove("invalid");
+        number.classList.add("valid");
+      } else {
+        number.classList.remove("valid");
+        number.classList.add("invalid");
+      }
+
+      // Validate length
+      if(myInput.value.length >= 8) {
+        length.classList.remove("invalid");
+        length.classList.add("valid");
+      } else {
+        length.classList.remove("valid");
+        length.classList.add("invalid");
+      }
+    }
 </script>
 </body>
 </html>

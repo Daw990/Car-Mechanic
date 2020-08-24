@@ -21,7 +21,7 @@
     <h3>Dodaj Naprawę:</h3>
     <hr>
 
-    <form action="#" th:action="@{/user/saveRepair}"
+    <form th:action="@{/user/saveRepair}"
           th:object="${repair}" th:method="POST">
 
         <input type="hidden" th:field="*{idRepair}"/>

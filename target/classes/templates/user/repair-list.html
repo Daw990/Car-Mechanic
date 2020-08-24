@@ -18,9 +18,9 @@
 
 <div class="container">
 
-    <br>
-    <h2 style="text-align:center"><b>Cennik</b></h2>
+    <h3>Cennik</h3>
     <hr>
+
     <h6 sec:authorize="hasAuthority('USER')">(kliknij "wybierz" aby zaplanować wizytę)</h6>
     <br>
     <a sec:authorize="hasAuthority('ADMIN')" th:href="@{/user/newRepair}"
@@ -58,7 +58,7 @@
                     Usuń
                 </a>
 
-                <a th:href="@{/user/makeVisit(idRep=${repair1.idRepair})}"
+                <a th:href="@{/user/visit/makeVisit(idRep=${repair1.idRepair})}"
                    class="btn btn-info btn-sm">
                     Wybierz
                 </a>
@@ -83,7 +83,7 @@
                    onclick="if (!(confirm('Jesteś pewny/a że chcesz usunąć?'))) return false">
                     Usuń
                 </a>
-                <a th:href="@{/user/makeVisit(idRep=${repair2.idRepair})}"
+                <a th:href="@{/user/visit/makeVisit(idRep=${repair2.idRepair})}"
                    class="btn btn-info btn-sm">
                     Wybierz
                 </a>
@@ -108,7 +108,7 @@
                    onclick="if (!(confirm('Jesteś pewny/a że chcesz usunąć?'))) return false">
                     Usuń
                 </a>
-                <a th:href="@{/user/makeVisit(idRep=${repair3.idRepair})}"
+                <a th:href="@{/user/visit/makeVisit(idRep=${repair3.idRepair})}"
                    class="btn btn-info btn-sm">
                     Wybierz
                 </a>
@@ -133,7 +133,7 @@
                    onclick="if (!(confirm('Jesteś pewny/a że chcesz usunąć?'))) return false">
                     Usuń
                 </a>
-                <a th:href="@{/user/makeVisit(idRep=${repair4.idRepair})}"
+                <a th:href="@{/user/visit/makeVisit(idRep=${repair4.idRepair})}"
                    class="btn btn-info btn-sm">
                     Wybierz
                 </a>

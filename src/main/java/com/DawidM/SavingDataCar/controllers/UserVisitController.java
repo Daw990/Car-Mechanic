@@ -16,6 +16,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Date;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 import java.util.Map;
@@ -111,16 +113,19 @@ public class UserVisitController {
 
         visit.setVisitStartedDate(DateAndTime.getDateAndTime());
         User user = (User) userDetailsService.loadUserByUsername(authentication.getName());
+        visit.setUser(user);
         user.addVisit(visit);
         visitService.save(visit);
         return "redirect:/user/userPanel";
     }
 
     @GetMapping("/visitList")
-    public String myVisits(Model model, Authentication authentication){
+    public String myVisits(@RequestParam(value = "date", required = false) String date, Model model, Authentication authentication){
 
         User user = (User) userDetailsService.loadUserByUsername(authentication.getName());
         List<Visit> visits = user.getVisits();
+        List<Visit> visitsByDate = visitService.getVisitsByDate(date);
+        model.addAttribute("visitsByDate", visitsByDate);
         model.addAttribute("visits", visits);
         return "user/visit-list";
     }

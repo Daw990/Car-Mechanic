@@ -35,5 +35,9 @@ public class Visit {
     @JoinColumn(name="id_repair")
     private Repair repair;
 
+    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.DETACH, CascadeType.PERSIST, CascadeType.REFRESH}  )
+    @JoinColumn(name="id_user")
+    private User user;
+
 
 }

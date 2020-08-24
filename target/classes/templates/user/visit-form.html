@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/jquery.datetimepicker.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
     <link rel="stylesheet" type="text/css" href="/css/login.css" >
     <link rel="stylesheet" type="text/css" href="/css/style.css" >
@@ -18,38 +19,42 @@
 
 <div class="container">
 
-<br>
-<h1>Zaplanuj Wizytę</h1>
+<h3>Zaplanuj Wizytę</h3>
 <hr>
-    <form th:action="@{/user/checkHours}" th:object="${repair}">
+
+    <form th:action="@{/user/visit/checkHours(date=${date})}" th:object="${repair}">
 
         <a th:text="${repair.fault}"></a>
 
         <input type="hidden" name="idRepair" th:field="*{idRepair}">
 
-        <input type="text" id="date" name="date" required="required"
-               class="form-control mb-4 col-4" >
+        <div class="input-group">
+            <button type="button" name="date" id="toggleDatePicker" class="input-group-text"><i class="fa fa-calendar-alt"></i></button>
+            <input type="text" id="datePicker" class="form-controll" required="required">
+        </div>
 
         <button type="submit" class="btn btn-info col-2">Sprawdź dostępne godziny</button>
     </form>
 
 </div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="/js/jquery.datetimepicker.full.min.js"></script>
 <script>
     $.datetimepicker.setLocale('pl');
-    var date = new Date();
-    $('#date').datetimepicker({
-        timepicker: false,
-        datepicker: true,
-        format: 'd-m-Y',  //format date
-        weeks: false,
-        minDate: 0, //today
-        value: date.getDate()
-    })
+
+	$('#datePicker').datetimepicker({
+		timepicker: false,
+		datePicker: true,
+		format: 'd-m-Y',
+		minDate: 0,
+		mask: true
+
+	})
+	$('#toggleDatePicker').on('click', function(){
+		$('#datePicker').focus()
+	})
 </script>
 </body>
 </html>
