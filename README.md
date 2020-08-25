@@ -1,6 +1,7 @@
 # Car-Mechanic
 
-Polish website with backend in spring boot, spring security and communication with the frontend via thymeleaf 
+Polish website with backend in spring boot, spring security and communication with the frontend via thymeleaf where user can add his cars to account and
+make an appointments
 
 Application have two ROLES:
 
@@ -51,7 +52,7 @@ Application have two ROLES:
        
    3. Make Roles
       
-      - in table 'role' need to make roles
+      - in table 'role' you need to add roles
       ```
       insert into role values (1, 'USER');
       insert into role values (2, 'ADMIN');
