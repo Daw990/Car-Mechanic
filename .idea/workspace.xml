@@ -20,42 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d75f5f2-7964-45a2-b080-9d32d55d5c80" name="Default Changelist" comment="added login page, index, WebController and security config. carEdit and carform moved to actionsCars folder in templates and some fixes.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/password.validation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/password.validation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/pwStrength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/electric.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/mechanic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/snow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/tire.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/UserVisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/controllers/UserVisitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/custom/DateAndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/custom/DateAndTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DawidM/SavingDataCar/entity/Visit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.datetimepicker.full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/actionsCars/cars-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/repair-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/repair-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/repair-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/repair-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/user-sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user-sign-up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/visit-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/visit-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/visit-hours-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/visit-hours-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/visit-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/visit-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/UserVisitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/controllers/UserVisitController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/custom/DateAndTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/custom/DateAndTime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/entity/Visit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DawidM/SavingDataCar/entity/Visit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.datetimepicker.full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/actionsCars/cars-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/actionsCars/cars-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/repair-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/repair-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/repair-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/repair-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/user-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/user-panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/visit-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/visit-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/visit-hours-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/visit-hours-form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,23 +74,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dawid-Laptop\Desktop\Car-Mechanic-master\Car-Mechanic\src\main\resources" />
-      <recent name="C:\Users\Dawid-Laptop\Desktop\Car-Mechanic-master\Car-Mechanic\src\main\resources\templates\user" />
-      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\images" />
-      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\img" />
-      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\js" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.DawidM.SavingDataCar" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.DawidM.SavingDataCar.component.mailBuilder" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\templates\user\date" />
       <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\css" />
       <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.DawidM.SavingDataCar.component.mailBuilder" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\programowanie\PracaInzynierska\Car-Mechanic\src\main\resources\static\images" />
+      <recent name="C:\Users\Dawid-Laptop\Desktop\Car-Mechanic-master\Car-Mechanic\src\main\resources" />
+      <recent name="C:\Users\Dawid-Laptop\Desktop\Car-Mechanic-master\Car-Mechanic\src\main\resources\templates\user" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\images" />
+      <recent name="G:\programowanie\PracaInzynierska\SavingDataCar\src\main\resources\static\img" />
     </key>
   </component>
   <component name="RunManager" selected="Application.SavingDataCarApplication">
@@ -271,41 +243,41 @@
     <state x="727" y="150" key="FileChooserDialogImpl/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1594458888929" />
     <state x="2182" y="172" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595260097157" />
     <state x="2473" y="181" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597324761047" />
-    <state width="1323" height="77" key="GridCell.Tab.0.bottom" timestamp="1598304381675">
+    <state width="1323" height="159" key="GridCell.Tab.0.bottom" timestamp="1598477540326">
       <screen x="-1366" y="384" width="1366" height="728" />
     </state>
     <state width="1323" height="167" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596891867754" />
-    <state width="1323" height="77" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1598304381675" />
+    <state width="1323" height="159" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1598477540326" />
     <state width="1557" height="267" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1597960283219" />
     <state width="1557" height="159" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276982" />
     <state width="1088" height="175" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
     <state width="1557" height="207" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
     <state width="1877" height="184" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597335371473" />
-    <state width="1323" height="77" key="GridCell.Tab.0.center" timestamp="1598304381675">
+    <state width="1323" height="159" key="GridCell.Tab.0.center" timestamp="1598477540325">
       <screen x="-1366" y="384" width="1366" height="728" />
     </state>
     <state width="1323" height="167" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596891867754" />
-    <state width="1323" height="77" key="GridCell.Tab.0.center/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1598304381675" />
+    <state width="1323" height="159" key="GridCell.Tab.0.center/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1598477540325" />
     <state width="1557" height="267" key="GridCell.Tab.0.center/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1597960283219" />
     <state width="1557" height="159" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276981" />
     <state width="1088" height="175" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
     <state width="1557" height="207" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
     <state width="1877" height="184" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597335371472" />
-    <state width="1323" height="77" key="GridCell.Tab.0.left" timestamp="1598304381675">
+    <state width="1323" height="159" key="GridCell.Tab.0.left" timestamp="1598477540325">
       <screen x="-1366" y="384" width="1366" height="728" />
     </state>
     <state width="1323" height="167" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596891867738" />
-    <state width="1323" height="77" key="GridCell.Tab.0.left/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1598304381675" />
+    <state width="1323" height="159" key="GridCell.Tab.0.left/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1598477540325" />
     <state width="1557" height="267" key="GridCell.Tab.0.left/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1597960283219" />
     <state width="1557" height="159" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276981" />
     <state width="1088" height="175" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
     <state width="1557" height="207" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1597091535633" />
     <state width="1877" height="184" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1597335371472" />
-    <state width="1323" height="77" key="GridCell.Tab.0.right" timestamp="1598304381675">
+    <state width="1323" height="159" key="GridCell.Tab.0.right" timestamp="1598477540325">
       <screen x="-1366" y="384" width="1366" height="728" />
     </state>
     <state width="1323" height="167" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596891867754" />
-    <state width="1323" height="77" key="GridCell.Tab.0.right/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1598304381675" />
+    <state width="1323" height="159" key="GridCell.Tab.0.right/0.0.1600.860/-1366.384.1366.728@-1366.384.1366.728" timestamp="1598477540325" />
     <state width="1557" height="267" key="GridCell.Tab.0.right/0.0.1600.860/-1366.384.1366.728@0.0.1600.860" timestamp="1597960283219" />
     <state width="1557" height="159" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1595259276982" />
     <state width="1088" height="175" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1595538397592" />
