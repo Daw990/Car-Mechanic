@@ -68,7 +68,7 @@ public class UserVisitController {
         List<Car> allCars = carService.getAuthenticatedUserCars(idUser);
 
         Map<LocalTime, Integer> hoursMap = visitService.fillHoursMap();
-        List<LocalTime> hours = visitService.getFreeHoursInList(hoursMap, repairLength);
+        List<LocalTime> hours = visitService.getFreeHoursInList(hoursMap, repairLength, date);
 
 
         if(!visits.isEmpty()){
@@ -86,7 +86,7 @@ public class UserVisitController {
                 hoursMap = visitService.changeValuesInHoursMap(hoursMap, howManyIndexesDelete, visitTime);
 
             }
-            hours = visitService.getFreeHoursInList(hoursMap, repair.getRepairTime()/30);
+            hours = visitService.getFreeHoursInList(hoursMap, repair.getRepairTime()/30, date);
             model.addAttribute("hours", hours);
 
         }else{

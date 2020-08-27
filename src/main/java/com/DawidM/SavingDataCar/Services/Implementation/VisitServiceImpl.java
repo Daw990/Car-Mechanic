@@ -6,7 +6,9 @@ import com.DawidM.SavingDataCar.repository.VisitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -68,8 +70,7 @@ public class VisitServiceImpl implements VisitService {
 
         hoursMap.forEach((k,v) -> {
             if(v == 0){
-                LocalTime secondTime;
-                secondTime = k;
+                LocalTime secondTime = k;
 
                 int i = 1;
                 long minutes = 30;
@@ -82,7 +83,10 @@ public class VisitServiceImpl implements VisitService {
                         secondTime = secondTime.minusMinutes(minutes);
                         if(hoursMap.get(secondTime) == 0) break;
 
-                        hoursMap.put(secondTime, i);
+                        LocalTime localTime = LocalTime.now();
+
+                            hoursMap.put(secondTime, i);
+
                         i++;
                     }
                 }
@@ -92,13 +96,23 @@ public class VisitServiceImpl implements VisitService {
     }
 
     @Override
-    public List<LocalTime> getFreeHoursInList(Map<LocalTime, Integer> hoursMap, int repairTime){
+    public List<LocalTime> getFreeHoursInList(Map<LocalTime, Integer> hoursMap, int repairTime, String date){
 
         List<LocalTime> hoursList = new ArrayList<>();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        LocalDate localDate2 = LocalDate.parse(date, formatter);
 
         hoursMap.forEach((k,v) -> {
-            if(v >= repairTime){
-                hoursList.add(k);
+            if(localDate2.equals(LocalDate.now())) {
+                if(k.isAfter(LocalTime.now())) {
+                    if (v >= repairTime) {
+                        hoursList.add(k);
+                    }
+                }
+            }else{
+                if (v >= repairTime) {
+                    hoursList.add(k);
+                }
             }
         });
         return hoursList;

@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div class="selectors">
+        <div class="selectors" th:if="${!hours.isEmpty()}">
             Wybierz godzinę:
 
             <select class="form-control mb-4 col-4" placeholder="godzina" required="required"
@@ -49,8 +49,15 @@
                 <option th:each="hour: ${hours}" th:value="${hour}" th:text="${hour}">
                 </option>
             </select>
+
+            <button type="submit" class="btn btn-primary col-2">Dodaj</button>
         </div>
-        <button type="submit" class="btn btn-primary col-2">Dodaj</button>
+
+
+        <div th:if="${hours.isEmpty()}">
+            <hr>
+            Brak wolnych terminów <a href="javascript:history.back()">Powrót</a>
+        </div>
 
     </form>
 

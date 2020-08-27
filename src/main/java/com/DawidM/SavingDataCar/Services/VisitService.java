@@ -15,6 +15,6 @@ public interface VisitService {
     Map<LocalTime, Integer> fillHoursMap();
     Map<LocalTime, Integer> changeValuesInHoursMap(Map<java.time.LocalTime, java.lang.Integer> hoursMap,
                                                 int repairTime, java.time.LocalTime startingHourRepair);
-    List<LocalTime> getFreeHoursInList(Map<LocalTime, Integer> hoursMap, int repairTime);
+    List<LocalTime> getFreeHoursInList(Map<LocalTime, Integer> hoursMap, int repairTime, String date);
 
     }
