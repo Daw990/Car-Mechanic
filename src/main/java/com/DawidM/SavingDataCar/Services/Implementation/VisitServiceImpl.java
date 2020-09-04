@@ -122,4 +122,9 @@ public class VisitServiceImpl implements VisitService {
     public Visit save(Visit visit) {
         return visitRepository.save(visit);
     }
+
+    @Override
+    public List<Visit> findAll(){
+        return visitRepository.findAll();
+    }
 }

@@ -1,5 +1,6 @@
 package com.DawidM.SavingDataCar.Services;
 
+import com.DawidM.SavingDataCar.entity.Car;
 import com.DawidM.SavingDataCar.entity.Visit;
 import org.springframework.data.repository.query.Param;
 
@@ -9,6 +10,7 @@ import java.util.Map;
 
 public interface VisitService {
 
+    List<Visit> findAll();
     List<Visit> getVisitsByDate(String date);
     Visit save(Visit visit);
     List<LocalTime> getAllHours();

@@ -15,11 +15,11 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
 
-    private SignUpService signUpService;
-    private RepairService repairService;
-    private VisitService visitService;
-    private CarService carService;
-    private UserDetailsService userDetailsService;
+    SignUpService signUpService;
+    RepairService repairService;
+    VisitService visitService;
+    CarService carService;
+    UserDetailsService userDetailsService;
 
     @Autowired
     public UserController(SignUpService signUpService, RepairService repairService,

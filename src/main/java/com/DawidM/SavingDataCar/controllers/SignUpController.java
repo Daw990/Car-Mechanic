@@ -15,8 +15,8 @@ import java.util.Optional;
 @RequestMapping("/")
 public class SignUpController {
 
-    private SignUpService signUpService;
-    private UserRepository userRepository;
+    SignUpService signUpService;
+    UserRepository userRepository;
 
     @Autowired
     public SignUpController(SignUpService signUpService, UserRepository userRepository){
