@@ -3,11 +3,6 @@
 Polish website with backend in spring boot, spring security and communication with the frontend via thymeleaf where user can add his cars to account and
 make an appointments
 
-Application have two ROLES:
-
-- USER
-- ADMIN
-
 ## Use Cases
 
 1. Unregistered user:
@@ -33,40 +28,45 @@ Application have two ROLES:
       ```
       git clone https://github.com/Daw990/Car-Mechanic.git
       ```
-   2. Get MySql with Workbench and make new DB with name 'savingdatacar' 
+   2. Get MySql with Workbench
+   
+      - [Link for download](https://dev.mysql.com/downloads/windows/installer/8.0.html)
+      - [youtube how to get started](https://www.youtube.com/watch?v=u96rVINbAUI)
+      - Open workbench and connect to local database. Create new database: file/New Query Tab
+      ```
+      CREATE SCHEMA `savingdatacar` ;
+      ```
+         
+      - Open project in IDE and go to:
       
-      in `src/main/resources/application.properties` use your username and password to DB
+      `src/main/resources/application.properties` use your username and password to Database (without '*').
       
       ```
       spring.datasource.username=*my DB username*
       
       spring.datasource.password=*my DB password*
       ```
-      
-       - with custom DB name just change in first line in file src/main/resources/application.properties
-         `spring.datasource.url=jdbc:mysql://localhost:3306/savingdatacar?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Europe/Berlin`
          
-         savingdatacar to your name of DB.
-         
-       - Hibernate will automatticaly make all needed tables
+       - Run code in IDE. Hibernate will automatticaly make all needed tables.
        
-   3. Make Roles
+   3. Go to Workbench and make roles (right click mouse on table: role -> select Rows) and add roles:
       
-      - in table 'role' you need to add roles
       ```
       insert into role values (1, 'USER');
       insert into role values (2, 'ADMIN');
       ```
+      
+   4. Add repair list to database (right click mouse on table: repair -> Table Data Import Wizard), File patch: "project patch"/sql/priceList.csv
    
-   3. Register (disable firewall before Registration)
+   5. Register (disable firewall before Registration)
    
       - To activate account you need to use activation link sended to your email (check spam)
       
-      - To get ADMIN privileges you need to add role 'ADMIN' to the newly created user  
+      - To get ADMIN privileges you need to add role 'ADMIN' to the your newly registered user  
       
       `insert into user_roles values (firstParam, secondParam);`
       
-      firstParam- id of user who will get ADMIN role
+      firstParam = id of user who will get ADMIN role
       
       secondParam = 2 - id of 'ADMIN' in role table
       
