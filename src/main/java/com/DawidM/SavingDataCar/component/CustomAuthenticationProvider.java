@@ -19,14 +19,11 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
     private static final String CREDENTIALS_CANT_BE_NULL = "credentials can not be null";
     private static final String INCORRECT_PASSWORD = "Incorrect Password";
 
-    private UserDetailsService userDetailsService;
-    private PasswordEncoder passwordEncoder;
+    @Autowired
+    UserDetailsService userDetailsService;
 
     @Autowired
-    public CustomAuthenticationProvider(UserDetailsService userDetailsService, PasswordEncoder passwordEncoder){
-        this.userDetailsService = userDetailsService;
-        this.passwordEncoder = passwordEncoder;
-    }
+    PasswordEncoder passwordEncoder;
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {

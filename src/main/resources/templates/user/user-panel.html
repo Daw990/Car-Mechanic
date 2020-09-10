@@ -39,9 +39,9 @@
     </div>
 
     <div class="row userPanelBox">
-        <a th:href="@{/user/repairsList}"
+        <a sec:authorize="hasAuthority('USER')" th:href="@{/user/repairsList}"
            class="btn btn-info btn-space">
-            Zarządzaj cennikiem
+            Cennik
         </a>
         <a th:href="@{/cars/list}"
            class="btn btn-info btn-space">

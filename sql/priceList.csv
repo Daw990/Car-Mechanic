@@ -1,0 +1,10 @@
+"id_repair";"category";"fault";"repair_price";"repair_time"
+1;"vulcanization";"Wymiana całych kół 16""";80;30
+2;"vulcanization";"Wymiana całych kół 18""";100;30
+3;"mechanics";"Wymiana klocków hamulcowych";140;60
+4;"mechanics";"Wymiana tarcz hamulcowych przód";180;90
+5;"electrics";"Wymiana żarówki";40;30
+6;"airConditioning";"Kompletny serwis";160;60
+7;"airConditioning";"odgrzybianie";60;30
+8;"electrics";"Wymiana akumulatora";40;30
+9;"mechanics";"Rozrząd + pompa wody";800;180

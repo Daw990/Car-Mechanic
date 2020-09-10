@@ -29,7 +29,7 @@ public class CarController {
         this.signUpService = signUpService;
     }
 
-    @RequestMapping("/list") //patch to list of cars
+    @GetMapping("/list") //patch to list of cars
     public String getCars(Model model, Authentication authentication){
 
         User user = (User) userDetailsService.loadUserByUsername(authentication.getName());
@@ -39,7 +39,7 @@ public class CarController {
         return "actionsCars/cars-list";
     }
 
-    @RequestMapping("/newCar") //patch u see in browse
+    @GetMapping("/newCar") //patch u see in browse
     public String createCar(Model model) {
         model.addAttribute("car", new Car());
         return "actionsCars/carform";  // name of file html

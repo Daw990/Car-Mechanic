@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SavingDataCar" target="9" />
+      <module name="SavingDataCar" target="1.8" />
       <module name="tests" target="1.8" />
     </bytecodeTargetLevel>
   </component>
