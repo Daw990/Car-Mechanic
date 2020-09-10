@@ -27,8 +27,8 @@
         <input type="hidden" th:field="*{idRepair}"/>
 
         <div class="form-group">
-            <select class="form-control mb-4 col-4" placeholder="Typ naprawy" required="required" th:field="*{category}">
-                <option value=disabled>Wybierz Kategorię</option>
+            <select class="form-control mb-4 col-4" required="required" th:field="*{category}">
+                <option value="" selected hidden>Wybierz Kategorię</option>
                 <option value="vulcanization">Wulkanizacja</option>
                 <option value="mechanics">Mechanika</option>
                 <option value="electrics">Elektryka</option>
@@ -39,11 +39,11 @@
         <input type="text" required="required" th:field="*{fault}"
                class="form-control mb-4 col-4" placeholder="Nazwa np.: Wymiana klocków hamulcowych">
 
-        <input type="text" required="required" th:field="*{repairPrice}"
+        <input type="number" required="required" th:field="*{repairPrice}"
                class="form-control mb-4 col-4" placeholder="Podaj cenę naprawy/wymiany">
 
-        <input type="number" required="required" step="15" min="15" value="15" th:field="*{repairTime}"
-               class="form-control mb-4 col-4" placeholder="Podaj czas trwania usługi">
+        <input type="number" required="required" step="30" min="30" value="30" th:field="*{repairTime}"
+               class="form-control mb-4 col-4" placeholder="Podaj czas trwania usługi w minutach">
 
         <button type="submit" class="btn btn-info col-2">Dodaj</button>
     </form>
