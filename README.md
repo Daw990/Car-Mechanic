@@ -23,7 +23,9 @@ make an appointments
      - Can see all visits in future
      
 ## Getting Started
-
+   
+   1. Get [java jdk 8] (https://www.oracle.com/pl/java/technologies/javase/javase-jdk8-downloads.html)
+   
    1. Get source code for example by git Bash: 
       ```
       git clone https://github.com/Daw990/Car-Mechanic.git
